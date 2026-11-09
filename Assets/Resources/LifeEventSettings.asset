@@ -1,0 +1,574 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca354ed113d040a3a09e9eedd52e3fdb, type: 3}
+  m_Name: LifeEventSettings
+  m_EditorClassIdentifier:
+  events:
+  - eventId: I01
+    stage: 0
+    title: "夜里的哭声"
+    prompt: "夜里醒来，房间很黑，你听见门外熟悉的脚步声。"
+    options:
+    - optionId: I01_A
+      answer: "哭出声，让他们听见"
+      traitName: "被听见"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“哭出声，让他们听见”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I01_B
+      answer: "抱紧小被子，听一听"
+      traitName: "熟悉的声音"
+      plannedEffect: "预警提前 +0.10 秒"
+      resultText: "你选择了“抱紧小被子，听一听”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I01_C
+      answer: "朝门缝的光慢慢爬去"
+      traitName: "向光而去"
+      plannedEffect: "拾光半径 +0.30 米"
+      resultText: "你选择了“朝门缝的光慢慢爬去”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: I02
+    stage: 0
+    title: "滚远的玩具"
+    prompt: "最喜欢的玩具滚到了桌脚后面，前方有一条窄窄的缝。"
+    options:
+    - optionId: I02_A
+      answer: "伸手，一点点够它"
+      traitName: "小小的距离"
+      plannedEffect: "拾光半径 +0.35 米"
+      resultText: "你选择了“伸手，一点点够它”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I02_B
+      answer: "贴着地板慢慢挪过去"
+      traitName: "软软的身体"
+      plannedEffect: "危险接触余量 +3%"
+      resultText: "你选择了“贴着地板慢慢挪过去”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I02_C
+      answer: "望着大人，请他们帮忙"
+      traitName: "接住我的手"
+      plannedEffect: "坠落援手 +1 次"
+      resultText: "你选择了“望着大人，请他们帮忙”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: I03
+    stage: 0
+    title: "第一次离开怀抱"
+    prompt: "家人把你放在软垫上，在不远处张开双臂。"
+    options:
+    - optionId: I03_A
+      answer: "朝他们爬去"
+      traitName: "怀抱仍在"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“朝他们爬去”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I03_B
+      answer: "先看看四周"
+      traitName: "初识世界"
+      plannedEffect: "预警提前 +0.10 秒"
+      resultText: "你选择了“先看看四周”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I03_C
+      answer: "沿软垫边缘慢慢摸索"
+      traitName: "摸清边界"
+      plannedEffect: "危险接触余量 +3%"
+      resultText: "你选择了“沿软垫边缘慢慢摸索”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: I04
+    stage: 0
+    title: "陌生的来客"
+    prompt: "陌生的亲戚弯下腰来，想伸手抱抱你。"
+    options:
+    - optionId: I04_A
+      answer: "抓住熟悉家人的衣角"
+      traitName: "熟悉的依靠"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“抓住熟悉家人的衣角”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I04_B
+      answer: "安静地看一会儿"
+      traitName: "观察陌生"
+      plannedEffect: "预警提前 +0.10 秒"
+      resultText: "你选择了“安静地看一会儿”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: I04_C
+      answer: "递出手里的小玩具"
+      traitName: "小小的分享"
+      plannedEffect: "拾光半径 +0.35 米"
+      resultText: "你选择了“递出手里的小玩具”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: C01
+    stage: 1
+    title: "公园里的断沟"
+    prompt: "朋友们已经跳过浅浅的断沟，回头喊你：轮到你了！"
+    options:
+    - optionId: C01_A
+      answer: "试着跳过去"
+      traitName: "再试一下"
+      plannedEffect: "跳跃输入缓冲 +0.04 秒"
+      resultText: "你选择了“试着跳过去”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C01_B
+      answer: "先看清落脚的位置"
+      traitName: "看清再走"
+      plannedEffect: "离地宽容 +0.03 秒"
+      resultText: "你选择了“先看清落脚的位置”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C01_C
+      answer: "请朋友在对面接应"
+      traitName: "伸来的手"
+      plannedEffect: "坠落援手 +1 次"
+      resultText: "你选择了“请朋友在对面接应”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: C02
+    stage: 1
+    title: "被抢走的玩具"
+    prompt: "有人抢走了你的玩具，说你肯定不敢拿回去。"
+    options:
+    - optionId: C02_A
+      answer: "认真说：请还给我"
+      traitName: "勇敢表达"
+      plannedEffect: "攻击威力 +8%"
+      resultText: "你选择了“认真说：请还给我”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C02_B
+      answer: "先躲开推搡，再想办法"
+      traitName: "保护自己"
+      plannedEffect: "危险接触余量 +3%"
+      resultText: "你选择了“先躲开推搡，再想办法”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C02_C
+      answer: "找老师帮忙"
+      traitName: "求助的勇气"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“找老师帮忙”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: C03
+    stage: 1
+    title: "灯熄了以后"
+    prompt: "睡前的灯熄灭了，熟悉的房间忽然有了陌生的影子。"
+    options:
+    - optionId: C03_A
+      answer: "睁眼看看，影子是什么"
+      traitName: "识破影子"
+      plannedEffect: "预警提前 +0.12 秒"
+      resultText: "你选择了“睁眼看看，影子是什么”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C03_B
+      answer: "抱着玩偶，慢慢数呼吸"
+      traitName: "安定节拍"
+      plannedEffect: "攻击间隔减免 +6%"
+      resultText: "你选择了“抱着玩偶，慢慢数呼吸”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C03_C
+      answer: "喊家人陪自己一会儿"
+      traitName: "允许依靠"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“喊家人陪自己一会儿”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: C04
+    stage: 1
+    title: "放学后的一个小时"
+    prompt: "作业还没写完，窗外的朋友正喊你一起去玩。"
+    options:
+    - optionId: C04_A
+      answer: "先把手头这一页做完"
+      traitName: "有始有终"
+      plannedEffect: "攻击威力 +8%"
+      resultText: "你选择了“先把手头这一页做完”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C04_B
+      answer: "约好玩一会儿就回来"
+      traitName: "给自己留白"
+      plannedEffect: "跳跃输入缓冲 +0.04 秒"
+      resultText: "你选择了“约好玩一会儿就回来”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: C04_C
+      answer: "请朋友陪自己一起做"
+      traitName: "一起完成"
+      plannedEffect: "拾光半径 +0.35 米"
+      resultText: "你选择了“请朋友陪自己一起做”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: T01
+    stage: 2
+    title: "成绩单"
+    prompt: "成绩单发下来了，这次的分数没有达到你的期待。"
+    options:
+    - optionId: T01_A
+      answer: "拆开错题，一题一题解决"
+      traitName: "把问题变小"
+      plannedEffect: "攻击间隔减免 +8%"
+      resultText: "你选择了“拆开错题，一题一题解决”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T01_B
+      answer: "找同学和老师一起分析"
+      traitName: "不必独自扛"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“找同学和老师一起分析”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T01_C
+      answer: "先缓一口气，再重新安排"
+      traitName: "给自己一点时间"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“先缓一口气，再重新安排”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: T02
+    stage: 2
+    title: "走廊里的纸条"
+    prompt: "有人把一张写着喜欢的纸条放进你的课本里。"
+    options:
+    - optionId: T02_A
+      answer: "认真回应这份喜欢"
+      traitName: "坦率回应"
+      plannedEffect: "普通弹速 +12%"
+      resultText: "你选择了“认真回应这份喜欢”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T02_B
+      answer: "约定先做朋友"
+      traitName: "慢慢靠近"
+      plannedEffect: "拾光半径 +0.40 米"
+      resultText: "你选择了“约定先做朋友”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T02_C
+      answer: "温和说明自己的边界"
+      traitName: "清晰边界"
+      plannedEffect: "危险接触余量 +4%"
+      resultText: "你选择了“温和说明自己的边界”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: T03
+    stage: 2
+    title: "志愿表"
+    prompt: "志愿表的截止日期近了，你面前有几条不同的路。"
+    options:
+    - optionId: T03_A
+      answer: "选择自己热爱的方向"
+      traitName: "心有所向"
+      plannedEffect: "攻击威力 +10%"
+      resultText: "你选择了“选择自己热爱的方向”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T03_B
+      answer: "选择更适合现状的方向"
+      traitName: "脚踏实地"
+      plannedEffect: "离地宽容 +0.03 秒、跳跃输入缓冲 +0.02 秒"
+      resultText: "你选择了“选择更适合现状的方向”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T03_C
+      answer: "先广泛了解，再作决定"
+      traitName: "多看一眼"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“先广泛了解，再作决定”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: T04
+    stage: 2
+    title: "比赛前一天"
+    prompt: "重要比赛就在明天，你还有一个动作练得不够熟。"
+    options:
+    - optionId: T04_A
+      answer: "专注练习最后一轮"
+      traitName: "专注一刻"
+      plannedEffect: "攻击威力 +10%"
+      resultText: "你选择了“专注练习最后一轮”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T04_B
+      answer: "看录像，弄清节奏"
+      traitName: "读懂节奏"
+      plannedEffect: "攻击间隔减免 +8%"
+      resultText: "你选择了“看录像，弄清节奏”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: T04_C
+      answer: "好好休息，明天再出发"
+      traitName: "保存余力"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“好好休息，明天再出发”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: Y01
+    stage: 3
+    title: "第一份工作"
+    prompt: "两份录用通知摆在桌上，你也想过再去别处看看。"
+    options:
+    - optionId: Y01_A
+      answer: "选择稳定的岗位"
+      traitName: "稳稳落脚"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“选择稳定的岗位”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y01_B
+      answer: "选择更有挑战的岗位"
+      traitName: "向难处走"
+      plannedEffect: "攻击威力 +12%"
+      resultText: "你选择了“选择更有挑战的岗位”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y01_C
+      answer: "继续寻找适合自己的方向"
+      traitName: "重新定位"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“继续寻找适合自己的方向”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: Y02
+    stage: 3
+    title: "父母催婚"
+    prompt: "父母又问起了你的婚事，而你也在认真考虑未来。"
+    options:
+    - optionId: Y02_A
+      answer: "结婚"
+      traitName: "有人同行"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“结婚”，把这一刻记在了人生里。"
+      narrativeFlag: "MarryNow"
+    - optionId: Y02_B
+      answer: "稳事业后再结婚"
+      traitName: "先立足"
+      plannedEffect: "攻击间隔减免 +8%"
+      resultText: "你选择了“稳事业后再结婚”，把这一刻记在了人生里。"
+      narrativeFlag: "CareerFirst"
+    - optionId: Y02_C
+      answer: "不结婚"
+      traitName: "自定人生"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“不结婚”，把这一刻记在了人生里。"
+      narrativeFlag: "StayUnmarried"
+  - eventId: Y03
+    stage: 3
+    title: "留下还是离开"
+    prompt: "租约快到期了，这座城市给过你机会，也让你感到疲惫。"
+    options:
+    - optionId: Y03_A
+      answer: "留下，继续经营生活"
+      traitName: "把日子站稳"
+      plannedEffect: "攻击间隔减免 +8%"
+      resultText: "你选择了“留下，继续经营生活”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y03_B
+      answer: "回到熟悉的地方"
+      traitName: "熟悉的支点"
+      plannedEffect: "坠落援手 +1 次"
+      resultText: "你选择了“回到熟悉的地方”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y03_C
+      answer: "去另一座城市试试"
+      traitName: "新的视角"
+      plannedEffect: "普通弹速 +15%、拾光半径 +0.15 米"
+      resultText: "你选择了“去另一座城市试试”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: Y04
+    stage: 3
+    title: "第一个大项目"
+    prompt: "一个重要项目交到你手里，你需要决定怎样推进。"
+    options:
+    - optionId: Y04_A
+      answer: "把任务拆开，按顺序完成"
+      traitName: "分步前进"
+      plannedEffect: "攻击间隔减免 +8%"
+      resultText: "你选择了“把任务拆开，按顺序完成”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y04_B
+      answer: "主动邀请同伴协作"
+      traitName: "共同承担"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“主动邀请同伴协作”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: Y04_C
+      answer: "先把风险和边界讲清楚"
+      traitName: "留出余地"
+      plannedEffect: "危险接触余量 +4%"
+      resultText: "你选择了“先把风险和边界讲清楚”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: M01
+    stage: 4
+    title: "同时响起的电话"
+    prompt: "工作消息和家人的电话同时亮起，你只能先处理一件。"
+    options:
+    - optionId: M01_A
+      answer: "先把眼前的工作安排妥当"
+      traitName: "分清步骤"
+      plannedEffect: "跳跃输入缓冲 +0.04 秒、离地宽容 +0.02 秒"
+      resultText: "你选择了“先把眼前的工作安排妥当”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M01_B
+      answer: "先接通家人的电话"
+      traitName: "留给重要的人"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“先接通家人的电话”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M01_C
+      answer: "告知双方，重新约定时间"
+      traitName: "学会协调"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“告知双方，重新约定时间”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: M02
+    stage: 4
+    title: "体检报告"
+    prompt: "体检报告提醒你，有些生活习惯需要调整。"
+    options:
+    - optionId: M02_A
+      answer: "开始规律作息"
+      traitName: "照顾自己"
+      plannedEffect: "危险接触余量 +4%"
+      resultText: "你选择了“开始规律作息”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M02_B
+      answer: "和亲近的人一起调整生活"
+      traitName: "相互照看"
+      plannedEffect: "障碍守护 +1 次、守护余温 +0.10 秒"
+      resultText: "你选择了“和亲近的人一起调整生活”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M02_C
+      answer: "先减少一项额外负担"
+      traitName: "给身体留空间"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“先减少一项额外负担”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: M03
+    stage: 4
+    title: "被需要的一天"
+    prompt: "又有人把新的责任交给你，说：这件事只有你能做好。"
+    options:
+    - optionId: M03_A
+      answer: "接下最关键的部分"
+      traitName: "扛住重点"
+      plannedEffect: "跳跃输入缓冲 +0.03 秒、离地宽容 +0.03 秒"
+      resultText: "你选择了“接下最关键的部分”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M03_B
+      answer: "邀请别人共同承担"
+      traitName: "分担重量"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“邀请别人共同承担”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M03_C
+      answer: "说明边界，拒绝额外部分"
+      traitName: "量力而行"
+      plannedEffect: "危险接触余量 +4%"
+      resultText: "你选择了“说明边界，拒绝额外部分”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: M04
+    stage: 4
+    title: "一通久违的电话"
+    prompt: "多年没联系的老朋友打来电话，问你最近过得怎么样。"
+    options:
+    - optionId: M04_A
+      answer: "认真聊聊这些年的变化"
+      traitName: "重新连接"
+      plannedEffect: "拾光半径 +0.45 米"
+      resultText: "你选择了“认真聊聊这些年的变化”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M04_B
+      answer: "约一个真正有空的时间见面"
+      traitName: "为相聚留位置"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“约一个真正有空的时间见面”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: M04_C
+      answer: "坦白自己最近很累"
+      traitName: "允许不坚强"
+      plannedEffect: "预警提前 +0.15 秒"
+      resultText: "你选择了“坦白自己最近很累”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: O01
+    stage: 5
+    title: "旧纸箱"
+    prompt: "整理房间时，你翻出了一个装满照片、车票和旧信的纸箱。"
+    options:
+    - optionId: O01_A
+      answer: "慢慢整理，把它们留下"
+      traitName: "把光收好"
+      plannedEffect: "拾光半径 +0.50 米"
+      resultText: "你选择了“慢慢整理，把它们留下”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O01_B
+      answer: "约亲近的人一起翻看"
+      traitName: "记得有人同行"
+      plannedEffect: "障碍守护 +1 次、守护余温 +0.10 秒"
+      resultText: "你选择了“约亲近的人一起翻看”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O01_C
+      answer: "留下最重要的，其余好好告别"
+      traitName: "轻装前行"
+      plannedEffect: "危险接触余量 +4%"
+      resultText: "你选择了“留下最重要的，其余好好告别”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: O02
+    stage: 5
+    title: "海边的邀请"
+    prompt: "有人邀请你去海边散步，今天的风有些大。"
+    options:
+    - optionId: O02_A
+      answer: "一起走，累了就歇一会儿"
+      traitName: "有人接应"
+      plannedEffect: "坠落援手 +1 次；本阶段已用过援手则改为障碍守护 +1 次"
+      resultText: "你选择了“一起走，累了就歇一会儿”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O02_B
+      answer: "自己慢慢走，沿途看看"
+      traitName: "留意脚下"
+      plannedEffect: "离地宽容 +0.03 秒、跳跃输入缓冲 +0.03 秒"
+      resultText: "你选择了“自己慢慢走，沿途看看”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O02_C
+      answer: "先坐在避风处，等风小一点"
+      traitName: "等一阵风"
+      plannedEffect: "预警提前 +0.18 秒"
+      resultText: "你选择了“先坐在避风处，等风小一点”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: O03
+    stage: 5
+    title: "夕阳前的长椅"
+    prompt: "海边的长椅空着，夕阳正在一点点落下。"
+    options:
+    - optionId: O03_A
+      answer: "再往前走一点，看看远处"
+      traitName: "仍有好奇"
+      plannedEffect: "拾光半径 +0.50 米"
+      resultText: "你选择了“再往前走一点，看看远处”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O03_B
+      answer: "坐下来，安静看一会儿"
+      traitName: "安住此刻"
+      plannedEffect: "预警提前 +0.18 秒"
+      resultText: "你选择了“坐下来，安静看一会儿”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O03_C
+      answer: "给想念的人说一句话"
+      traitName: "把话留下"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“给想念的人说一句话”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  - eventId: O04
+    stage: 5
+    title: "新的兴趣"
+    prompt: "社区开了一门新课程，你发现自己仍有想学的东西。"
+    options:
+    - optionId: O04_A
+      answer: "报名，慢慢学"
+      traitName: "日子还有新意"
+      plannedEffect: "拾光半径 +0.50 米"
+      resultText: "你选择了“报名，慢慢学”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O04_B
+      answer: "邀请熟人一起参加"
+      traitName: "再交一个朋友"
+      plannedEffect: "障碍守护 +1 次"
+      resultText: "你选择了“邀请熟人一起参加”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+    - optionId: O04_C
+      answer: "先旁听，找到适合的节奏"
+      traitName: "按自己的节拍"
+      plannedEffect: "跳跃输入缓冲 +0.04 秒、离地宽容 +0.02 秒"
+      resultText: "你选择了“先旁听，找到适合的节奏”，把这一刻记在了人生里。"
+      narrativeFlag: ""
+  resumeCountdownSeconds: 3
+  keyboardShortcuts: 1
+  verboseLogging: 0
+  cardFontSize: 24
+  backdropOpacity: 0.94
+  fontOverride: {fileID: 0}
+

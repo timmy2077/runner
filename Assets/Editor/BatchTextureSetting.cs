@@ -5,7 +5,6 @@ public class BatchTextureSetting : EditorWindow
 {
     private bool useMipmap = true;
     private TextureImporterCompression compression = TextureImporterCompression.Compressed;
-
     [MenuItem("工具/批量贴图参数设置")]
     static void OpenWindow()
     {
@@ -19,7 +18,6 @@ public class BatchTextureSetting : EditorWindow
         useMipmap = EditorGUILayout.Toggle("开启Mipmap", useMipmap);
         compression = (TextureImporterCompression)EditorGUILayout.EnumPopup("贴图压缩", compression);
         GUILayout.Space(15);
-
         if (GUILayout.Button("一键应用设置", GUILayout.Height(35)))
         {
             ApplySetting();
@@ -37,8 +35,8 @@ public class BatchTextureSetting : EditorWindow
             string path = AssetDatabase.GetAssetPath(obj);
             // 获取贴图导入器
             TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-            if (importer == null) continue;
-
+            if (importer == null)
+                continue;
             // 修改参数
             importer.mipmapEnabled = useMipmap;
             importer.textureCompression = compression;
@@ -46,6 +44,7 @@ public class BatchTextureSetting : EditorWindow
             importer.SaveAndReimport();
             count++;
         }
+
         AssetDatabase.Refresh();
         EditorUtility.DisplayDialog("完成", $"成功处理{count}张贴图", "确定");
     }

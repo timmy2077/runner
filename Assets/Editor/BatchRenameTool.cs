@@ -5,7 +5,6 @@ public class BatchRenameTool : EditorWindow
 {
     private string prefixName = "Res_";
     private int startNum = 0;
-
     // 在顶部菜单创建按钮
     [MenuItem("工具/批量重命名工具")]
     static void OpenToolWindow()
@@ -21,11 +20,11 @@ public class BatchRenameTool : EditorWindow
         prefixName = EditorGUILayout.TextField("资源前缀：", prefixName);
         startNum = EditorGUILayout.IntField("起始数字：", startNum);
         GUILayout.Space(15);
-
         if (GUILayout.Button("一键批量重命名", GUILayout.Height(38)))
         {
             StartRename();
         }
+
         GUILayout.Space(12);
         EditorGUILayout.HelpBox("操作方法：左边Project窗口先选中多个资源，再点按钮", MessageType.Info);
     }
@@ -35,7 +34,6 @@ public class BatchRenameTool : EditorWindow
     {
         // 获取你选中的资源
         Object[] selectFiles = Selection.objects;
-
         // 判断有没有选中东西
         if (selectFiles.Length == 0)
         {
@@ -54,6 +52,7 @@ public class BatchRenameTool : EditorWindow
             AssetDatabase.RenameAsset(path, newFileName);
             num++;
         }
+
         // 刷新Unity资源
         AssetDatabase.Refresh();
         EditorUtility.DisplayDialog("完成", $"一共修改{selectFiles.Length}个文件", "确定");

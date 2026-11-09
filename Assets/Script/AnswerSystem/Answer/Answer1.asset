@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e572f3b12b9c84cb9b6fff336f876b, type: 3}
   m_Name: Answer1
   m_EditorClassIdentifier: 
-  answerText: fuck you
+  answerText: "你可以停一下，再继续这一程。"
   keySO:
-  - key: text1
+  - key: "继续这一程"
     isCorrect: 0
-  - key: text2
+  - key: "重活一世"
     isCorrect: 1
-  - key: text3
+  - key: "回看回忆"
     isCorrect: 0
-  - key: text4
+  - key: "返回起点"
     isCorrect: 0

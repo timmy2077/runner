@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab99bc6500638b47aa34d591fb280e8, type: 3}
+  m_Name: JourneyDemonSettings
+  m_EditorClassIdentifier:
+  demons:
+  - demon: 1
+    title: 恐惧
+    sprite: {fileID: 0}
+    tint: {r: 0.48, g: 0.36, b: 0.65, a: 1}
+    startProgress: 0.45
+    arenaEndProgress: 0.7
+    arrivalSeconds: 2
+    warningSeconds: 2
+    activeSeconds: 1
+    recoverySeconds: 3
+    secondPhaseRecovery: 2
+    introduction: 看清前方的封路预警。按 J 攻击，也可以停下等待。
+    resolution: 你穿过了恐惧留下的间隙。路还在前方。
+  - demon: 2
+    title: 焦虑
+    sprite: {fileID: 0}
+    tint: {r: 0.9, g: 0.65, b: 0.3, a: 1}
+    startProgress: 0.45
+    arenaEndProgress: 0.7
+    arrivalSeconds: 2
+    warningSeconds: 2
+    activeSeconds: 1
+    recoverySeconds: 3
+    secondPhaseRecovery: 2
+    introduction: 先看落点，再迈步。落物不会填满所有空隙。
+    resolution: 你终于找回了自己的步调。
+  - demon: 3
+    title: 迷茫
+    sprite: {fileID: 0}
+    tint: {r: 0.4, g: 0.65, b: 0.75, a: 1}
+    startProgress: 0.45
+    arenaEndProgress: 0.7
+    arrivalSeconds: 2
+    warningSeconds: 2
+    activeSeconds: 1
+    recoverySeconds: 3
+    secondPhaseRecovery: 2
+    introduction: 地面的标记会告诉你，移动的障碍将去哪里。
+    resolution: 答案还未齐全，你已经走出了这片雾。
+  - demon: 4
+    title: 压力
+    sprite: {fileID: 0}
+    tint: {r: 0.78, g: 0.42, b: 0.38, a: 1}
+    startProgress: 0.45
+    arenaEndProgress: 0.7
+    arrivalSeconds: 2
+    warningSeconds: 2
+    activeSeconds: 1
+    recoverySeconds: 3
+    secondPhaseRecovery: 2
+    introduction: 重量落下前，先离开地面的标记。路口封闭时可以等待。
+    resolution: 这一次，你为自己放下了一点重量。
+  - demon: 5
+    title: 死亡
+    sprite: {fileID: 0}
+    tint: {r: 0.65, g: 0.73, b: 0.7, a: 1}
+    startProgress: 0.45
+    arenaEndProgress: 0.9
+    arrivalSeconds: 2
+    warningSeconds: 2
+    activeSeconds: 1
+    recoverySeconds: 3
+    secondPhaseRecovery: 2
+    introduction: 远处的身影没有催促你。带着这一生，慢慢向海边走。
+    resolution: 你依然舍不得。但这一次，你没有再躲开。

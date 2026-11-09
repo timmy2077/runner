@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e572f3b12b9c84cb9b6fff336f876b, type: 3}
   m_Name: Answer2
   m_EditorClassIdentifier: 
-  answerText: you too
+  answerText: "慢一点，也可以走到很远。"
   keySO:
-  - key: text11
+  - key: "继续这一程"
     isCorrect: 0
-  - key: text22
+  - key: "重活一世"
     isCorrect: 0
-  - key: text33
+  - key: "回看回忆"
     isCorrect: 1
-  - key: text44
+  - key: "返回起点"
     isCorrect: 0
